@@ -1,6 +1,6 @@
 {
   "name": "react-native-daily-step-counter",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "get daily step count using CMPedometer and activity sensor",
   "main": "index.ts",
   "scripts": {

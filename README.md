@@ -1,6 +1,6 @@
-# react-native-react-native-daily-step-counter
+# react-native-daily-step-counter
 
-> WIP. Definitely not production ready. 🚧
+> WIP. Definitely not production-ready. 🚧
 
 It collects step counts and lets you the data per date without accessing healthkit or google fitness api.
 
