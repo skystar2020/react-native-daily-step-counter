@@ -1,0 +1,24 @@
+{
+  "name": "react-native-daily-step-counter",
+  "version": "0.0.9",
+  "description": "get daily step count using CMPedometer and activity sensor",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "pedometer",
+    "step counter"
+  ],
+  "author": "eatnug",
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": "^0.63.4"
+  },
+  "devDependencies": {
+    "@types/react-native": "^0.63.4",
+    "react-native": "^0.63.4",
+    "react": "16.13.1"
+  }
+}
