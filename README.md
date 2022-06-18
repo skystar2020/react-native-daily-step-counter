@@ -2,7 +2,7 @@
 
 > WIP. Definitely not production-ready. 🚧
 
-It collects step counts and lets you the data per date without accessing healthkit or google fitness api.
+It collects step counts and lets you query the data per date without accessing healthkit or google fitness api.
 
 ## Abstract
 
