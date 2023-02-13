@@ -18,7 +18,7 @@ interface NativeStepCounter extends EventSubscriptionVendor, NativeModule {
     endDate: number,
     handler: (error: any, data: PedometerData) => void
   ) => void;
-  
+
   authorizationStatus: (
     callback: (
       error: any,
@@ -43,7 +43,9 @@ class Pedometer {
   private subscription?: EmitterSubscription;
   private EventEmitter: NativeEventEmitter;
   constructor() {
-    this.EventEmitter = new NativeEventEmitter(NativeStepCounter);
+    if (Platform.OS === "ios")
+      this.EventEmitter = new NativeEventEmitter(NativeStepCounter);
+    else this.EventEmitter = new NativeEventEmitter();
   }
 
   public queryPedometerDataBetweenDates(
@@ -99,7 +101,7 @@ class Pedometer {
   }
 
   private ios_authorizationStatus() {
-    if(Platform.OS !== 'ios') return false;
+    if (Platform.OS !== 'ios') return false;
     return new Promise((res, rej) => {
       NativeStepCounter.authorizationStatus(
         (
